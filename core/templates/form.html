@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TRAVEL WITH US...</title>
+	<link rel="stylesheet" type="text/css" href="/static/main.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="shortcut icon" href="logo2.png" type="image/png" />
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmqmbPxHorvUxdXkVpAumH6XQq9WuBW1M&libraries=places"></script>
+	<style>
+		::placeholder{
+			font-size: 90%;
+			padding-left: 5%; 
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<div id="nav">
+			<a href="" class="link1">
+				<img src="/static/logo2.png" id="logo"/>
+				<p id="logo_text">RAVEL</p>
+			</a>
+			
+			<a href="" id="nav_link1">Help</a>
+			<a href="" id="nav_link2">Login</a>
+			<a href="" id="nav_link3">Signup</a>
+			<a href="" id="host_link">Become a Host</a>
+		</div>
+		<div id="welcome_text_div">
+			<p id="welcome_text">Welcome Home</p>
+			<p id="welcome_text_sub">We Rent unique places For You</p>
+			<a href="" id="welcome_link">How it works</a>
+		</div>
+		<form method="post">
+			{% csrf_token %}
+			<div id="searchbar">
+
+				<input type="text" id="where_div" name="where" placeholder="   	Where you want to go ?" maxlength="50">
+				
+				<input type="text" id="check_div" name="check_in" placeholder="Check In Date " maxlength="50">
+				
+				<input type="text" id="check_out_div" name="check_out" placeholder="Check Out Date" maxlength="50">
+				
+				<input class="searchbar_text" type="text" name="guest_no" id ="guest_div" placeholder="  Guest No  ▼" maxlength="50">
+			   	<a href="">
+				   	<div id="search_div">
+						<input id="search_text" type="submit" value="Search" style="margin-left:0px;margin-top:0px;width: 100%;height: 50px;background-color:#cc0000;">
+				    </div>
+				</a>
+				
+			</div>
+		</form>
+		
+	</div>
+	<div id="mid">
+		<div>
+			<p id="mid_heading">We may be apart, but we'll get<br> through this together.</p>
+		</div>
+		<div id="part1">
+			<a href="" class="link1">
+				<img src="/static/bg.jpeg" id="part_image"/>
+				<p class="mid_text">Online Experiences</p>
+				<p class="mid_para">Now you can meet people all over the world while trying something new.</p>
+			</a>
+		</div>
+		<div id="part2">
+			<a href="" class="link1">
+				<img src="/static/bg1.jpg" id="part_image"/>
+				<p class="mid_text">Book Now</p>
+				<p class="mid_para">Contact us </p>
+			</a>
+		</div>
+		<div id="part3">
+			<a href="" class="link1">
+				<img src="/static/bg3.jpg" id="part_image"/>
+				<p class="mid_text" >Stay with us</p>
+				<p class="mid_para" >Meet new peoples .</p>
+			</a>
+		</div>
+	</div>
+	<div id="lower_mid">
+		<div id="lower_mid_heading">Introducing Online Experiences</div>
+		<a href="" id="host_link1">Explore all</a>
+		<p id="lower_mid_sub">Now you can meet people all over the world while trying <br>something new. Join live, interactive video sessions led by <br>expert hosts—all without leaving home.</p>
+		<div id="lower_part1">
+			<a href="">
+				<img src="/static/lower0.jpg" id="part_image"/>
+				<p id="lower_part">
+					Experience Luxurious Places With Us ...<br><br>Travel The World With Us ...
+				</p>
+			</a>
+		</div>
+		<div id="lower_part2">
+			<a href="">
+				<img src="/static/lower4.jpg" id="part_image"/>
+				<p id="lower_part">
+					Experience Heritage With Us ...
+				</p>
+			</a>
+		</div>
+		<div id="lower_part3">
+			<a href="">
+				<img src="/static/lower1.jfif" id="part_image"/>
+				<p id="lower_part">
+					Experience Beauty With Us ...
+				</p>
+			</a>
+		</div>
+		<div id="lower_part4">
+			<a href="">
+				<img src="/static/lower5.jpg" id="part_image"/>
+				<p id="lower_part">
+					Experience Peace With Us ...
+				</p>
+			</a>
+		</div>
+	</div>
+	<div id="bottom">
+		<div id="bottom1">
+			<p id="bottom_heading">
+				About<br>
+			</p>
+			<a href="" id="bottom_link">Accessibility<br><br></a>
+			<a href="" id="bottom_link">Trust & Safety<br><br></a>
+			<a href="" id="bottom_link">TRAVEL Citizen<br><br></a>
+			<a href="" id="bottom_link">Newsroom</a>
+		</div>
+		<div id="bottom2">
+			<p id="bottom_heading">
+				Community<br>
+			</p>
+			<a href="" id="bottom_link">TRAVEL Magazine<br><br></a>
+			<a href="" id="bottom_link">TRAVEL for Work<br><br></a>
+			<a href="" id="bottom_link">Invite friends<br><br></a>
+			<a href="" id="bottom_link">Careers</a>
+		</div>
+		<div id="bottom3">
+			<p id="bottom_heading">
+				Host<br>
+			</p>
+			<a href="" id="bottom_link">Host your home<br><br></a>
+			<a href="" id="bottom_link">Host an experience<br><br></a>
+			<a href="" id="bottom_link">Responsible hosting<br><br></a>
+			<a href="" id="bottom_link">Open Homes</a>
+		</div>
+		<div id="bottom4">
+			<p id="bottom_heading">
+				Support<br>
+			</p>
+			<a href="" id="bottom_link">Help Centre<br><br></a>
+			<a href="" id="bottom_link">Neighbourhood Support<br><br></a>
+			<a href="" id="bottom_link">Olympics<br><br></a>
+			<a href="" id="bottom_link">Resource Centre</a>
+		</div>
+	</div>
+	<div id="footer">
+		<p><hr id="footer_length"></p>
+		<div id="footer_text_div">
+			<p id="footer_text">© 2020 TRAVEL, Inc. All rights reserved  &nbsp ·Privacy &nbsp ·Terms &nbsp  ·Sitemap &nbsp ·UK Modern Slavery Act &nbsp ·Company details</p>
+		</div>
+		
+		<div id="footer_img_div">
+			<a href="https://www.instagram.com/garvit_chittora_07/">
+			<img src="/static/instafi.png" id="footer_insta_image"/>
+			</a>
+			<a href="https://twitter.com/ChittoraGarvit" class="link">
+				<i class="fa fa-twitter" aria-hidden="true"id="footer_twitter_image" ></i>
+			</a>
+			<a href="https://www.facebook.com/garvit.chittora.90" class="link">
+				<i class="fa fa-facebook" aria-hidden="true" id="footer_fb_image"></i>
+			</a>
+			<img src="/static/web.png" id="world1"/>
+			<a href="" id="footer_link">English<br><br></a>
+		</div>
+		
+	</div>
+</body>
+</html>
