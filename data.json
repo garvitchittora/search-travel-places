@@ -179,6 +179,30 @@
             "check_in": "10 april",
             "check_out": "15 june",
             "guest_no": "2"
+        },
+        {
+            "where": "goa",
+            "check_in": "5",
+            "check_out": "5",
+            "guest_no": "5"
+        },
+        {
+            "where": "goa",
+            "check_in": "5",
+            "check_out": "5",
+            "guest_no": "5"
+        },
+        {
+            "where": "goa",
+            "check_in": "5",
+            "check_out": "6",
+            "guest_no": "5"
+        },
+        {
+            "where": "goa",
+            "check_in": "5",
+            "check_out": "10",
+            "guest_no": "5"
         }
     ]
 }

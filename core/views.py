@@ -18,6 +18,7 @@ def selenium(string):
     python_button = browser.find_elements_by_xpath("//input[@class='gNO89b']")
     python_button[0].submit()
     browser.maximize_window()
+    
 
 def abc(request):
    text = """<h1>welcome to abc !</h1>"""
